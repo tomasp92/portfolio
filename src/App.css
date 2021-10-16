@@ -1,38 +1,280 @@
-.App {
+.languageChoice{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  width: max-content;
+  background-color: rgb(100, 100, 100);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  top: 50%;
+  right: 0;
+  height: 40px;
+}
+
+
+.body{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Header{
+  display: flex;
+  padding: 2%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(201, 201, 195);
+}
+
+.Foto {
+  width: 25%;
+  top: 12%;
+  left: 9%;
+  height: 300px;
+  width: 240px;
+  border-radius: 10%;
+  flex-shrink: 20%;
+  flex-basis: 220px;
+}
+
+.HeaderContainer{
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  padding: 2%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ImgContainer{
+  display: flex;
+  top: 2%;
+  padding: 3%;
+  margin: 0;
+  padding: auto;
+}
+
+.WordContainer{
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#FotoYo{
+  width: 200; 
+  height:200;
+  text-align: center; 
+  border-radius: 50%;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Frase{
+  background-color:rgb(233, 233, 233); 
+  width: 50%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 20px;
+  height: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+.FraseContainer{
+  top:30px; 
+  padding: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#textofrase{
+  font-size: 35px;
+}
+
+#tim{
+  text-align:right; 
+  padding-right: 40px;
+}
+
+.SectionTitle {
+  padding-left: 3%; 
+  padding-top: 1%; 
+  color: rgb(45, 30, 97);
+}
+
+.SubtitleProyectos{
+  text-align: left;
+  margin-right: 60%;
+  color:rgb(45, 30, 97); 
+}
+
+.carouselImage{
+  max-width: 600px;
+  max-height: 280px;
+}
+
+/* 
+
+
+#header{
+  background-color:rgb(201, 201, 195);
+
+}
+
+#translate{
+  display: flex;
+  padding: 1%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+#blanc{
+  flex-shrink: 30%;
+  flex-grow: 80%;
+}
+
+#translatewebsite{
+  flex-grow: 10%;
+  text-align: right;
+  width: 10%;
+}
+#toggle-buttons{
+  flex-grow: 10%;
+}
+
+
+#headerfoto{
+  width: 30%;
+  background-color:rgb(233, 233, 233);
+  top: 12%; 
+  left: 9%; 
+  background-color:rgb(233, 233, 233); 
+  height: 315px; width: 270px;
+  border-radius: 10%;
+  flex-shrink: 20%;
+  flex-basis: 270px;
+}
+
+
+
+
+h3{
+  text-align: left;
+}
+
+*/
+.proyectos{
+  display: flex;
+  padding: 2%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carouselContainer{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel{
+  position: relative;
+  z-index: 0;
+  width: 600px; 
+  height: auto;
+  padding: 10px;
+  margin: auto;
+}
+
+.carousel-inner{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.videoContainer{
+  margin: 0;
+}
+
+.video{
+  margin: 0;
+  text-align: center;
+}
+
+.ProyectoTexto{
+  margin: 3% 15%;
+  text-align: center;
+}
+
+#harvard{
+  text-align: center; 
+}
+
+@media screen and (max-width: 1100px){
+  .Header{
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .Frase{
+    width: 90%;
+    padding: 3%;
+    margin: 3%;
+    box-sizig: border-box;
+  }
+  h1{
+     font-size: smaller; 
+  }
+  .carousel{
+    width: 90%;
+    height: auto;
+    max-width: 450px;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+    text-align: center;
+    box-sizig: border-box;
+  }
+  img{
+    max-width: 300px;
+  }
+  #harvard > iframe {
+    max-width: 528px; 
+    max-height: 460px;
+    text-align: center;
+    justify-content: center;
   }
 }
+
+@media screen and (max-width: 500px){
+
+  .carousel{
+    width: 90%;
+    max-width: 350px;
+    justify-content: center;
+    padding: 3%;
+    margin: 3%;
+    box-sizig: border-box;
+  }
+
+  #harvard > iframe{
+    max-width: 352px; 
+    max-height: 307px;
+    text-align: center;
+    justify-content: center;
+    box-sizig: border-box;
+  }
+  #google_translate_element{
+    background-color: brown;
+    display: flex;
+    max-width: fit-content;
+    height: auto;
+  }
+}
+ 

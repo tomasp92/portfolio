@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ChangeLanguage from './ChangeLanguage/index'
+import Main from './pages/Main'
+import ProyectsDetailsContainer from './pages/ProyectsDetailsContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  const [ingles, setIngles] = useState(true)
+  return(
+    <BrowserRouter>
+      <ChangeLanguage  setIngles={setIngles} ingles={ingles}/>
+      <Switch>
+        <Route path='/:titulo'>
+          <ProyectsDetailsContainer ingles={ingles} />
+        </Route>
+        <Route exact path='/' >
+          <Main ingles={ingles} />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
+  
 
-export default App;
+export default App
