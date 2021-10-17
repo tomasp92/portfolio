@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Proyecto from '../components/Proyecto/index'
+import { Link } from 'react-router-dom'
 
 const proyectos = [
     {
@@ -8,8 +9,8 @@ const proyectos = [
         variant: 'dark',
         titulo: 'Commerce',
         title: 'Commerce',
-        video: <iframe title='Commerce explanation' width="683" height="323"  src="https://www.youtube.com/embed/OVFu8yVu39U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture" allowfullscreen className='video'></iframe>,
+        video: <iframe className='video' title='Commerce explanation' width="683" height="323"  src="https://www.youtube.com/embed/OVFu8yVu39U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>,
         imgSrc: ["img/Commerce/commerce1.jpg", "img/Commerce/commercelisting.jpg", "img/Commerce/commerceownproduct.jpg", "img/Commerce/commerce_createnewlisting.jpg", "img/Commerce/commercecategories.jpg", "img/Commerce/commercelogin.jpg", "img/Commerce/commerceregister.jpg"],
         texto: <div><p> Este proyecto fue realizado en Python mediante la plataforma de Django y untilizando SQL como base de datos.</p>
         <p>Al ser un proyecto de pagina web dinamica no puede mostrarse en github, sin embargo quiero mostrar al menos como se ve la pagina, explicar sus funcionalidades con un video (el mismo está en ingles ya que lo realicé para el curso </p>
@@ -25,7 +26,7 @@ const proyectos = [
         id: 1,
         titulo: 'Mail',
         title: 'Mail',
-        video: <iframe title='Mail explanation' width="683px" height="430px" src="https://www.youtube.com/embed/xjemMc8fgWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        video: <iframe title='Mail explanation' width="683px" height="430px" src="https://www.youtube.com/embed/xjemMc8fgWs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className='video'></iframe>,
         variant: 'dark',
         imgSrc: ["img/Mail/mailsinbox.jpg", "img/Mail/mailcompose.jpg", "img/Mail/mailrecived.jpg ", "img/Mail/mailarchived.jpg ", "img/Mail/maillogin.jpg", "img/Mail/mailsent.jpg"],
         texto: <div><p> Este proyecto fue realizado en Python mediante el framework de Django y untilizando SQL como base de datos.</p><p>Tammbién se utilizó Java Script para el front end. Al ser un proyecto de pagina web dinamica no puede mostrarse en github, sin embargo quiero mostrar al menos como se ve la pagina, explicar sus funcionalidades con un video (el mismo está en ingles ya que lo realicé para el curso de Harvard) y dejarles un <a href = "https://github.com/tomasp92/mail-CS50/tree/master/mail">Link al codigo</a> con el objetivo de que lo puedan ver.</p><br /><p>En este proyecto realice una pagina web en la cual un usuario debía poder logearse y enviar y recibir mails.</p><p>Tambien archivar los mismos y que al leerlos cambien de color quedando diferenciados los leidos y los no leidos. Para eso fue necesario utilizar API para enviar y recibir información.</p><p>Fue realizado en el marco de un curso de programación web con python y javascript en Harvard. </p></div>,
@@ -55,6 +56,7 @@ const ProyectsDetailsContainer = ({ ingles }) =>{
 
     return(
         <div>
+            <Link className='link' to='/'>{ ingles? 'Back to porfolio' : 'Volver al portfolio' }</Link>
             <div >
                 <h1 className='SectionTitle'>{ ingles? 'Proyects Porfolio' : 'Portfolio de proyectos' }</h1>
             </div>
