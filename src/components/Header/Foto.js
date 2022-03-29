@@ -5,7 +5,7 @@ const Foto = () =>
     </div>
     <div className='WordContainer'>
         <h5>Tomás Palau Posse</h5>
-        <h6>Junior Web Developer</h6>
+        <h6>FullStack Web Developer</h6>
     </div>
   </div>
   
