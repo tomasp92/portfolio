@@ -183,7 +183,7 @@ li{
   }
   .Frase{
     width: 90%;
-    padding: 3%;
+    padding: 2%;
     margin: 3%;
     box-sizig: border-box;
   }
@@ -209,9 +209,21 @@ li{
     text-align: center;
     justify-content: center;
   }
+  strong{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 765px){
+  strong{
+    font-size: 10px;
+  }
+  #tim{
+    font-size: 15px;
+  }
+  .Frase{
+    padding: 1%;
+  }
   .video{
     width: 512px; 
     height: 242px;

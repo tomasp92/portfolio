@@ -5,7 +5,7 @@ const Proyects = ({ ingles }) =>
   <div className="proyectos">
     <h2 className='SubtitleProyectos'>{ ingles? 'Featured Proyects' : 'Proyectos destacados' }</h2>
     <ContainerProyectosDestacados ingles={ingles} />
-    <h2 className='SubtitleProyectos'>{ ingles? 'Other Proyects' : 'Proyectos destacados' }</h2>
+    <h2 className='SubtitleProyectos'>{ ingles? 'Other Proyects' : 'Otros Proyectos' }</h2>
     <ContainerOtrosProyectos ingles={ingles} />
   </div>
   

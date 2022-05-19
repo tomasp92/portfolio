@@ -3,6 +3,15 @@ const proyectosDestacados= [
     {
         id: 0,
         variant: 'dark',
+        titulo: <a class="nav-link" href="https://cryptovips.org/">Cryptovips</a>,
+        title: <a class="nav-link" href="https://cryptovips.org/">Cryptovips</a>,
+        imgSrc: ["img/cryptovips/home.bmp", "img/cryptovips/groups.bmp", "img/cryptovips/launching.bmp",   "img/cryptovips/mobile.bmp", "img/cryptovips/tokenomics.bmp", "img/cryptovips/vip_groups.bmp"],
+        texto: <div><p> Implementación realizada con React y firebase, adaptación de un sitio web para presentar una web 3, se trabajo sobre muchos elementos que le faltaban al frontend para ser finalizado y se desarrollo la version mobile. Trabajado en  <a href="https://github.com/fcarbonelli/CryptoVips">github</a>.</p></div>,
+        text: <div><p> Implementation carried out with React and firebase, adaptation of a website to present a web 3, work was done on many elements that were missing from the frontend to be finalized and the mobile version was developed. Worked on <a href="https://github.com/fcarbonelli/CryptoVips"> github </a>.</p></div>
+    },
+    {
+        id: 1,
+        variant: 'dark',
         titulo: <a class="nav-link" href="https://workhub.atexto.com/">Programa de referidos</a>,
         title: <a class="nav-link" href="https://workhub.atexto.com/">Referrals Program</a>,
         imgSrc: ["img/Atexto Referrals/referrals_main.jpg", "img/Atexto Referrals/referrals1.jpg", "img/Atexto Referrals/referrals2.jpg",   "img/Atexto Referrals/referrals3.jpg", "img/Atexto Referrals/referrals_modal.jpg"],
@@ -10,7 +19,7 @@ const proyectosDestacados= [
         text: <div><p> Implementation made with React for the front-end and php for the back-end using SQL as the database. Worked on <a href="https://gitlab.com/tomaspalauatexto"> gitlab </a>, the code is not public. </ p > <p> It was made for the company where I work right now, if you want to interact with the page made, the link is the following: <a href="https://workhub.atexto.com/"> workhub.atexto. com </a> </p> </div>
     },
     {
-        id: 1,
+        id: 2,
         titulo: <a class="nav-link" href="https://tomasp92.github.io/barbarmullermakeup/index.html">barbarmullermakeup</a>,
         title: <a class="nav-link" href="https://tomasp92.github.io/barbarmullermakeup/index.html">barbarmullermakeup</a>,
         variant: 'dark',
@@ -23,7 +32,7 @@ const proyectosDestacados= [
         <p>It was done as the final project of a Javascript programming course at Coder House</p> </div>
     },
     {
-        id: 2,
+        id: 3,
         titulo: <a class="nav-link" href="https://tomasp92.github.io/Proyectos-porfolio/">Blog Mensajes Encriptados</a>,
         title: <a class="nav-link" href="https://tomasp92.github.io/Proyectos-porfolio/">Encrypted Messages Blog</a>,
         variant: false,
